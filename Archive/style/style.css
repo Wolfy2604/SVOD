@@ -1,0 +1,362 @@
+@font-face {
+    font-family: 'merriweatherbold';
+    src: url('../fonts/merriweather-bold-webfont.eot');
+    src: url('../fonts/merriweather-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/merriweather-bold-webfont.woff2') format('woff2'),
+    url('../fonts/merriweather-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweatheritalic';
+    src: url('../fonts/merriweather-italic-webfont.eot');
+    src: url('../fonts/merriweather-italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/merriweather-italic-webfont.woff2') format('woff2'),
+    url('../fonts/merriweather-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweatherlight';
+    src: url('../fonts/merriweather-light-webfont.eot');
+    src: url('../fonts/merriweather-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/merriweather-light-webfont.woff2') format('woff2'),
+    url('../fonts/merriweather-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweatherregular';
+    src: url('../fonts/merriweather-regular-webfont.eot');
+    src: url('../fonts/merriweather-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/merriweather-regular-webfont.woff2') format('woff2'),
+    url('../fonts/merriweather-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.eot');
+    src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.eot');
+    src: url('../fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('../fonts/roboto-lightitalic-webfont.eot');
+    src: url('../fonts/roboto-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*-------------1INDEX---------------*/
+
+:root {
+    
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: merriweatherregular, "Times New Roman", serif;
+    font-size: 18px;
+}
+
+.container {
+    min-height: 100%;
+}
+
+/*---------1.1HEADER-------------*/
+
+header {
+    background-color: white;
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.bottom-line {
+    border-bottom: 1px solid #083B6B;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    min-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 1px 3px 16px 1px #083B6B;
+}
+
+.site-title {
+    margin-left: 5%;
+}
+
+.site-title-text {
+    font-family: merriweatheritalic, "Times New Roman", serif;
+    color: #006F48;
+    font-size: 34px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.date-box {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin: 0 3% 0 auto;
+    width: 250px;
+    height: 75px;
+    border-radius: 5px;
+    border: 1px solid #083B6B;
+    padding: 5px;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #193551;
+}
+
+.date-value,
+.time-value {
+    font-size: 18px;
+}
+
+.date-box > p {
+    margin: 0;
+}
+
+.login-box {
+    width: 150px;
+    height: 75px;
+    margin-right: 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #083B6B;
+}
+
+.login-box > p {
+    color: gray;
+    font-family: merriweatherbold, "Times New Roman", serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0 0 5px;
+}
+
+.login-box-domen,
+.login-box-user {
+    color: black;
+}
+
+/*------------1.2MAIN-------------*/
+
+main {
+    width: 100%;
+}
+
+.login-window {
+    min-height: 200px;
+    background-color: #52B793;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#login,
+#password {
+    outline: none;
+    border-radius: 5px;
+    border: #083B6B;
+    margin-bottom: 20px;
+    height: 30px;
+    padding-left: 7px;
+    box-sizing: border-box;
+    min-height: 35px;
+}
+
+#login:hover,
+#password:hover {
+    background-color: #9CBBD9;
+    transition: all 0.3s ease;
+}
+
+.login-form-label {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.login-form {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 16px;
+}
+
+.login-submit {
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 130px;
+}
+
+.login-submit:hover,
+.reg-button:hover {
+    background-color: #9CBBD9;
+    transition: all 0.3s ease;
+}
+
+.login-submit:active,
+.reg-button:active {
+    background-color: #5786B2;
+    transition: all 0.3s ease;
+}
+
+.reg-button {
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 260px;
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+}
+
+/*---------------1.3NEWS--------------*/
+
+.news-box {
+    width: 95%;
+    text-align: center;
+    border: 3px solid orange;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.news-header {
+    padding: 0;
+    margin: 15px auto;
+    color: #193551;
+}
+
+.news-block {
+    width: 95%;
+    background-color: orange;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.news-block-date {
+    flex: 1 85px;
+    border-right: 1px solid gray;
+    font-size: 16px;
+}
+
+.news-block-text {
+    padding: 5px;
+    flex: 14;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: robotoregular, Arial, sans-serif;
+    font-size: 18px;
+    width: 900px;
+    box-sizing: border-box;
+    max-height: 66px;
+    transition: max-height 1s ease;
+}
+
+.news-block-big:hover .news-block-text,
+.news-block-big {
+    transition: all 1s ease;
+    white-space: normal;
+    overflow: auto;
+    max-height: 200px;
+}
+
+.define-form {
+    background-color: #35D59D;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.define-form > label {
+    font-size: 20px;
+}
+
+.define-form > select {
+    margin: 0 10px;
+    outline: none;
+    border-radius: 7px;
+    height: 33px;
+    font-size: 18px;
+
+}
+
+.define-form > input[type=submit] {
+    background-color: white;
+}
+
+footer {
+    height: 50px;
+    margin-top: -50px;
+    background-color: #20805E;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+
+}

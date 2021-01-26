@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница менеджера</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
+</head>
+<body>
+    <container>
+        <header>
+            <div class="site-title">
+                <p class="site-title-text">Сервис свода статистических отчетов</p>
+            </div>
+            <div class="date-box">
+                <p class="date-text">Текущая дата: <span class="date-value"></span></p>
+                <p class="time-text">Текущее время: <span class="time-value"></span></p>
+            </div>
+            <div class="login-box">
+                <p class="login-box-text">Учетная запись</p>
+                <p>Домен: <span class="login-box-domen"></span></p>
+                <p>Логин: <span class="login-box-user"></span></p>
+            </div>
+            <div class="bottom-line"></div>
+        </header>
+        <main>
+            <div class="define-dorm-block">
+                <form action="#" class="total-form" name="Свод формы">
+                    <label for="choose-form">Выберите форму:</label>
+                    <select name="choose-form" id="choose-form">
+                        <option value="form8_19">Форма 8-19</option>
+                        <option value="form18">Форма 18</option>
+                        <option value="form13_18">Форма 13-18</option>
+                    </select>
+                    <label for="choose-term">Выберите отчетный период:</label>
+                    <select name="choose-term" id="choose-term">
+                        <option value="1kv">3 месяца</option>
+                        <option value="2kv">6 месяцев</option>
+                        <option value="3kv">9 месяцев</option>
+                        <option value="4kv">12 месяцев</option>
+                    </select>
+                    <input type="submit" value="Принять">
+                </form>
+                <form action="#" class="statistic-form" name="Статистика по формам">
+                    <fieldset name="Статистика по подразделениям">
+                        <label for="choose-form-stat-dept">Выберите форму:</label>
+                        <select name="choose-form-stat-dept" id="choose-form-stat-dept">
+                            <option value="form8_19">Форма 8-19</option>
+                            <option value="form18">Форма 18</option>
+                            <option value="form13_18">Форма 13-18</option>
+                        </select>
+                        <label for="choose-dept-stat-dept">Выберите подразделение:</label>
+                        <select name="choose-dept-stat-dept" id="choose-dept-stat-dept">
+                            <option value="firstDept">филиал в Сергиевском районе</option>
+                            <option value="secondDept">отдел в г. Самаре</option>
+                        </select>
+                        <input type="submit" value="Принять">
+                    </fieldset>
+                    <fieldset name="Статистика по периодам">
+                        <label for="choose-form-stat-term">Выберите форму:</label>
+                        <select name="choose-form-stat-term" id="choose-form-stat-term">
+                            <option value="form8_19">Форма 8-19</option>
+                            <option value="form18">Форма 18</option>
+                            <option value="form13_18">Форма 13-18</option>
+                        </select>
+                        <label for="choose-term-stat-term">Выберите отчетный период:</label>
+                        <select name="choose-term-stat-term" id="choose-term-stat-term">
+                            <option value="1kv">3 месяца</option>
+                            <option value="2kv">6 месяцев</option>
+                            <option value="3kv">9 месяцев</option>
+                            <option value="4kv">12 месяцев</option>
+                        </select>
+                        <input type="submit" value="Принять">
+                    </fieldset>
+                </form>
+            </div>
+            <form-table></form-table>
+            <logFloat></logFloat>
+            <newsBoxFloat></newsBoxFloat>
+        </main>
+        <a href="index.html">Main</a><a href="user.html">User</a><a href="admin.html">Admin</a>
+    </container>
+    <footer>
+        <p class="footer-text">&copy 2020 год</p>
+    </footer>
+    <script src="js/vue.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html>

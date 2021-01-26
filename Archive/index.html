@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Сервис свода форм статистической отчетности</title>
+        <link rel="stylesheet" href="style/normalize.css">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="site-title">
+                    <p class="site-title-text">Сервис свода статистических отчетов</p>
+                </div>
+                <div class="date-box">
+                    <p class="date-text">Текущая дата: <span class="date-value"></span></p>
+                    <p class="time-text">Текущее мск. время: <span class="time-value"></span></p>
+                </div>
+                <div class="login-box">
+                    <p class="login-box-text">Учетная запись</p>
+                    <p>Домен: <span class="login-box-domen"></span></p>
+                    <p>Логин: <span class="login-box-user"></span></p>
+                </div>
+                <div class="bottom-line"></div>
+            </header>
+            <main>
+                <div class="login-window">
+                    <form action="login" class="login-form">
+                        <label for="login" class="login-form-label">Введите имя учетной записи:</label>
+                        <input type="text" id="login" placeholder="login...">
+                        <label for="password" class="login-form-label">Введите пароль:</label>
+                        <input type="password" id="password" placeholder="123...">
+                        <input type="submit" class="login-submit" value="Войти" formaction="#" onclick="login.checkLogin">
+                    </form>
+                    <form class="registration"></form>
+                    <button class="reg-button">Подать заявку на регистрацию</button>
+                </div>
+                <div class="news-box">
+                    <h1 class="news-header">Новости</h1>
+                </div>
+            </main>
+            <a href="user.html">User</a><a href="manager.html">Manager</a><a href="admin.html">Admin</a>
+        </div>
+        <footer>
+            <p class="footer-text">&copy 2020 год</p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

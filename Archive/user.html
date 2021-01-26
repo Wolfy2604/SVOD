@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница пользователя</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
+</head>
+<body>
+    <container>
+        <header>
+            <div class="site-title">
+                <p class="site-title-text">Сервис свода статистических отчетов</p>
+            </div>
+            <div class="date-box">
+                <p class="date-text">Текущая дата: <span class="date-value"></span></p>
+                <p class="time-text">Текущее время: <span class="time-value"></span></p>
+            </div>
+            <div class="login-box">
+                <p class="login-box-text">Учетная запись</p>
+                <p>Домен: <span class="login-box-domen"></span></p>
+                <p>Логин: <span class="login-box-user"></span></p>
+            </div>
+            <div class="bottom-line"></div>
+        </header>
+        <main>
+            <form action="#" class="define-form" name="Выберите форму:">
+                <label for="choose-form">Выберите форму:</label>
+                <select name="choose-form" id="choose-form">
+                    <option value="form8_19">Форма 8-19</option>
+                    <option value="form18">Форма 18</option>
+                    <option value="form13_18">Форма 13-18</option>
+                </select>
+            </form>
+            <form-table></form-table>
+            <logFloat></logFloat>
+            <newsBoxFloat></newsBoxFloat>
+        </main>
+        <a href="index.html">Main</a><a href="manager.html">Manager</a><a href="admin.html">Admin</a>
+    </container>
+    <footer>
+        <p class="footer-text">&copy 2020 год</p>
+    </footer>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница администратора</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
+</head>
+<body>
+    <container>
+        <header>
+            <div class="site-title">
+                <p class="site-title-text">Сервис свода статистических отчетов</p>
+            </div>
+            <div class="date-box">
+                <p class="date-text">Текущая дата: <span class="date-value"></span></p>
+                <p class="time-text">Текущее время: <span class="time-value"></span></p>
+            </div>
+            <div class="login-box">
+                <p class="login-box-text">Учетная запись</p>
+                <p>Домен: <span class="login-box-domen"></span></p>
+                <p>Логин: <span class="login-box-user"></span></p>
+            </div>
+            <div class="bottom-line"></div>
+        </header>
+        <main>
+            <div class="admin-menu">
+                <button class="users">Пользователи</button>
+                <button class="create-news">Создать новость</button>
+            </div>
+            <adminTable></adminTable>
+            <createNews></createNews>
+        </main>
+        <a href="index.html">Main</a><a href="user.html">User</a><a href="manager.html">Manager</a>
+    </container>
+    <footer>
+        <p class="footer-text">&copy 2020 год</p>
+    </footer>
+    <script src="js/vue.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
